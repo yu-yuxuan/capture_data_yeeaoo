@@ -1,0 +1,17 @@
+* Function:
+  *./yeeaoo_download.py* is to grab the contents from yeeaoo. It includes:
+  1. Task1
+  2. Task2
+  The lists saved on the same directory of the program.
+  *./yeeaoo_folder.py* is to deal with the lists which created by the yeeaoo.
+  The program  creates *yeeaoo* folder if  *yeeaoo* folder doesn't exist. Then create folders whose name is the exam year.  Also, it creates a file called *url* which contains the specified website in each folder.
+* Requirement:
+
+  #+begin_example
+  python3
+  beautifulsoup4
+  requests
+  #+end_example
+* Running order
+  1. yeeaoo_download.py
+  2. yeeaoo_folder.py
