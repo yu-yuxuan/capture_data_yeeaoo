@@ -34,52 +34,10 @@ def capture_web(weburl,file):
 
 
 if __name__ == "__main__":
-    filename="Task1"
+    filename=input('Enter file name here: ') # "Task1"
     silentremove(filename)
-    htmlurl="http://www.yeeaoo.com/testlist/1-155-2006.html"
-    capture_web(htmlurl,filename)
-    htmlurl="http://www.yeeaoo.com/testlist/1-155-2007.html"
-    capture_web(htmlurl,filename)
-    htmlurl="http://www.yeeaoo.com/testlist/1-155-2008.html"
-    capture_web(htmlurl,filename)
-    htmlurl="http://www.yeeaoo.com/testlist/1-155-2009.html"
-    capture_web(htmlurl,filename)
-    htmlurl="http://www.yeeaoo.com/testlist/1-155-2010.html"
-    capture_web(htmlurl,filename)
-    htmlurl="http://www.yeeaoo.com/testlist/1-155-2011.html"
-    capture_web(htmlurl,filename)
-    htmlurl="http://www.yeeaoo.com/testlist/1-155-2012.html"
-    capture_web(htmlurl,filename)
-    htmlurl="http://www.yeeaoo.com/testlist/1-155-2013.html"
-    capture_web(htmlurl,filename)
-    htmlurl="http://www.yeeaoo.com/testlist/1-155-2014.html"
-    capture_web(htmlurl,filename)
-    htmlurl="http://www.yeeaoo.com/testlist/1-155-2015.html"
-    capture_web(htmlurl,filename)
-    htmlurl="http://www.yeeaoo.com/testlist/1-155-2016.html"
-    capture_web(htmlurl,filename)
-
-    filename="Task2"
-    silentremove(filename)
-    htmlurl="http://www.yeeaoo.com/testlist/1-158-2006.html"
-    capture_web(htmlurl,filename)
-    htmlurl="http://www.yeeaoo.com/testlist/1-158-2007.html"
-    capture_web(htmlurl,filename)
-    htmlurl="http://www.yeeaoo.com/testlist/1-158-2008.html"
-    capture_web(htmlurl,filename)
-    htmlurl="http://www.yeeaoo.com/testlist/1-158-2009.html"
-    capture_web(htmlurl,filename)
-    htmlurl="http://www.yeeaoo.com/testlist/1-158-2010.html"
-    capture_web(htmlurl,filename)
-    htmlurl="http://www.yeeaoo.com/testlist/1-158-2011.html"
-    capture_web(htmlurl,filename)
-    htmlurl="http://www.yeeaoo.com/testlist/1-158-2012.html"
-    capture_web(htmlurl,filename)
-    htmlurl="http://www.yeeaoo.com/testlist/1-158-2013.html"
-    capture_web(htmlurl,filename)
-    htmlurl="http://www.yeeaoo.com/testlist/1-158-2014.html"
-    capture_web(htmlurl,filename)
-    htmlurl="http://www.yeeaoo.com/testlist/1-158-2015.html"
-    capture_web(htmlurl,filename)
-    htmlurl="http://www.yeeaoo.com/testlist/1-158-2016.html"
-    capture_web(htmlurl,filename)
+    while True:
+        htmlurl=input('Enter url(loop) here: ') # "http://www.yeeaoo.com/testlist/1-155-2006.html"
+        if htmlurl == "":                       # If it is a blank line...
+            break                               # ...break the loop""
+        capture_web(htmlurl,filename)
