@@ -31,7 +31,7 @@ if __name__ == "__main__":
     folder=input('Enter folder name here: ') # "Task.org"
     ensure_dir(folder)
     with cd(folder):
-        with open( './'+fileread, 'r') as f:
+        with open( '../'+fileread, 'r') as f:
             reader = csv.reader(f, dialect='excel', delimiter='_')
             for row in reader:
                 ensure_dir(row[0])
