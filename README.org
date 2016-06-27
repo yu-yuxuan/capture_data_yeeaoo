@@ -15,3 +15,25 @@
 * Running order
   1. yeeaoo_download.py
   2. yeeaoo_folder.py
+* Instructions
+  1. create TPO.org as follows
+     #+BEGIN_EXAMPLE
+     TPO  # the file name which store the website of each topic
+     http://www.yeeaoo.com/testlist/1-161-0.html
+     http://www.yeeaoo.com/testlist/1-162-0.html
+     http://www.yeeaoo.com/testlist/1-175-0.html
+     http://www.yeeaoo.com/testlist/1-174-0.html
+     http://www.yeeaoo.com/testlist/1-173-0.html
+     http://www.yeeaoo.com/testlist/1-172-0.html
+
+     Stop
+     #+END_EXAMPLE
+
+  2. yeeaoo_download.py < TPO.org
+
+  3. create Info_to_Gold.org
+     #+BEGIN_EXAMPLE
+     TPO   # same in TPO.org
+     url   # file name in each folder in TPO_speaking
+     TPO_speaking  # folder name
+     #+END_EXAMPLE
